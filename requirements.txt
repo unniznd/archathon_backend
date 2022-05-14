@@ -6,3 +6,4 @@ whitenoise
 djongo
 requests
 django-cors-headers
+dnspython

@@ -25,10 +25,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# if DEBUG:
-#     from .dev_settings import *
-# else:
-from .prod_settings import *
+if DEBUG:
+    from .dev_settings import *
+else:
+    from .prod_settings import *
 
 
 
