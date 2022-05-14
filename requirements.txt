@@ -1,0 +1,7 @@
+django
+gunicorn
+pymongo
+django-restframework
+whitenoise
+djongo
+requests
