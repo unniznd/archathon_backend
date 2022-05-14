@@ -84,7 +84,6 @@ class MarketLiveView(ListAPIView):
                 "name":sym,
                 "short":symbols[sym].replace('USDT',''),
                 "price":round(float(data['price']),3),
-                "logo":"/media/"+symbols[sym].replace('USDT','')+".png"
             })
         
 
