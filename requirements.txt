@@ -1,9 +1,6 @@
 django
 gunicorn
-pymongo
 djangorestframework
 whitenoise
-djongo
 requests
 django-cors-headers
-dnspython
