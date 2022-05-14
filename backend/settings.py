@@ -31,7 +31,6 @@ else:
     from .prod_settings import *
 
 
-CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
 
@@ -46,8 +45,13 @@ INSTALLED_APPS = [
     'coins',
 
     'rest_framework',
-    'rest_framework.authtoken'
+    'rest_framework.authtoken',
+    'corsheaders',
 ]
+
+
+CORS_ORIGIN_ALLOW_ALL = True
+
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
