@@ -5,3 +5,4 @@ djangorestframework
 whitenoise
 djongo
 requests
+django-cors-headers
