@@ -11,6 +11,8 @@ urlpatterns = [
     path('login/',coin_views.Login.as_view(), name="login"),
     path('register/',coin_views.Register.as_view(), name="register"),
 
+    path('profile/',coin_views.ProfileView.as_view(), name="profile"),
+
     path('price/',coin_views.MarketLiveView.as_view(), name="market-live"),
     path('price/<str:id>/',coin_views.MarketLiveView.as_view(), name="market-live-id"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

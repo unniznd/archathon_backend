@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+from coins.models import ProfileModel, WatchListModel
+
+
+@admin.register(ProfileModel)
+class ProfileAdmin(admin.ModelAdmin):
+    list_display = ['user','cash_in_hand']
