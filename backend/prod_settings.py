@@ -2,7 +2,7 @@ import os
 
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
-ALLOWED_HOSTS = ['archathonbackendserver.herokuapp.com']
+ALLOWED_HOSTS = ['archathonbackendserver.herokuapp.com','*']
 
 
 DATABASES = {
